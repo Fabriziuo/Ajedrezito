@@ -69,4 +69,50 @@ body {
         font-size: 8px;
 
     }
+
+}
+/*estilo del reloj*/
+aside{
+	border: 1px solid #759652;
+	background-color:#EBEBD0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#contenedor{
+	background-color:darkturquoise;
+	color:#EBEBD0;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 10px;
+    
+}
+
+.reloj{
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 30px;
+	display: inline-block; height: 100px;
+   
+}
+
+.boton{
+	outline: none;
+	color: #000500;
+	text-shadow: 0px -1px 1px black;
+	font-size: 16px;
+	border-radius: 5px;
+	font-family: Helvetica;
+	cursor: pointer;
+	background-color: #EBEBD0;
+}
+
+
+h2{
+	font-size: 30px;
+	color:#7E6752;
+	font-weight: bold;
+	padding:0px 0px 10px 10px;
 }

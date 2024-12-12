@@ -6,7 +6,52 @@
     <title>Ajedrezito</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
+<!--Reloj de tiempo-->
+<aside id="players">
+			
+
+    <div class="player1">
+        <h2>PLAYER 1</h2>
+        <div id="contenedor">
+            
+            <div id="clock">
+                <div class="reloj" id="Horas">00</div>
+                <div class="reloj" id="Minutos">:00</div>
+                <div class="reloj" id="Segundos">:00</div>
+                <div class="reloj" id="Centesimas">:00</div>
+            </div>
+            <input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+            <input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+            <input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+            <input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+        </div>
+    </div>
+    
+    <div class="player2">
+        <h2>PLAYER 2</h2>
+        <div id="contenedor">
+            
+            <div id="clock">
+                <div class="reloj" id="Horas_2">00</div>
+                <div class="reloj" id="Minutos_2">:00</div>
+                <div class="reloj" id="Segundos_2">:00</div>
+                <div class="reloj" id="Centesimas_2">:00</div>
+            </div>
+            <input type="button" class="boton" id="inicio_2" value="Start &#9658;" onclick="inicio_2(this);">
+            <input type="button" class="boton" id="parar_2" value="Stop &#8718;" onclick="parar_2();" disabled>
+            <input type="button" class="boton" id="continuar_2" value="Resume &#8634;" onclick="inicio_2();" disabled>
+            <input type="button" class="boton" id="reinicio_2" value="Reset &#8635;" onclick="reinicio_2();" disabled>
+        </div>
+    </div>
+
+</aside>
+
+
+</div>
+
+    <!---->
     <div class="chessBoard">
         <!--8 Columna-->
         <div class="square white">
@@ -234,5 +279,6 @@
         </div>  
     </div>
     <script src="script/app.js"></script>
+    <script src="script/reloj.js"></script>
 </body>
 </html>
